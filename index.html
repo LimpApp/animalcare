@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<!--
+ Todos os direitos Reservados. <p>Gabriel Rodrigues Silva - Senac 2024</p>.
+								
+-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>Animal Care</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Your Font Here', sans-serif; /* Optionally set your preferred font */
+            font-size: 16px; /* Tamanho padrão da fonte para dispositivos grandes */
+        }
+
+        #nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #; /* Escolha a cor de fundo desejada */
+            color: white; /* Escolha a cor do texto desejada */
+            padding: 10px;
+        }
+
+        #nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #nav a:hover {
+            text-decoration: underline;
+        }
+
+        .pagina2 {
+            font-size: 18px;
+        }
+
+        .container {
+            display: flex;
+            margin: 50px; /* Espaçamento entre os blocos */
+        }
+
+        .plan-details {
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 20px;
+            max-width: 300px;
+            background-color: #f9f9f9;
+            margin: auto; /* Adicionado para centralizar horizontalmente */
+            font-size: 18px;
+        }
+
+        /* Estilos para telas médias (como tablets) */
+        @media screen and (max-width: 768px) {
+            body {
+                font-size: 14px;
+            }
+            /* Adicione mais ajustes conforme necessário */
+        }
+
+        /* Estilos para telas pequenas (como smartphones) */
+        @media screen and (max-width: 480px) {
+            body {
+                font-size: 12px;
+            }
+            /* Adicione mais ajustes conforme necessário */
+        }
+
+        /* Estilos para tornar a imagem responsiva */
+        .img-responsive {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper-->
+    <div id="wrapper">
+
+        <!-- Nav -->
+        <nav id="nav">
+            <a href="#" class="icon solid fa-home"><span>Página Inicial</span></a>
+            <a href="#work" class="icon solid fa-folder"><span>Como Funciona?</span></a>
+            <a href="#contact" class="icon solid fa-envelope"><span>Login/Cadastro</span></a>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Me -->
+            <article id="home" class="panel intro">
+                <header>
+                    <h3>Animal Care</h3>
+                    <p>Prezado(a) Tutor(a),</p>
+                    Aqui na AnimalCare, nós entendemos que seu pet é um membro da família e que você quer o melhor para ele.
+                    Por isso, desenvolvemos um aplicativo que oferece todos os cuidados que seu pet precisa, com comodidade
+                    e praticidade.
+                </header>
+                <a href="#work" class="jumplink pic">
+                    <span class="arrow icon solid fa-chevron-right"><span>Veja nosso trabalho</span></span>
+                    <img src="images/me.jpg" alt="" class="img-responsive" />
+                </a>
+            </article>
+
+            <!-- Work -->
+            <article id="work" class="panel">
+                <header>
+                    <h2>Como Funciona a Animal Care?</h2>
+                </header>
+
+                <div class="pagina2">
+                    <p>No nosso site, você encontra:</p>
+                    <ul>
+                        <li>Dicas de cuidados com o pet: nós temos uma equipe de veterinários especialistas que estão
+                            sempre compartilhando dicas para manter seu pet saudável e feliz.</li>
+                        <li>Lista de veterinários próximos: encontre os veterinários mais próximos da sua casa, com ótimos
+                            preços e avaliações.</li>
+                        <li>Vídeo chamada com veterinário: se seu pet apresentar algum mal-estar, você pode entrar em
+                            contato com um veterinário online e receber os primeiros socorros.</li>
+                        <li>Além disso, oferecemos dois planos de assinatura:</li>
+                    </ul>
+
+                    <div class="container">
+                        <div class="plan-details">
+                            <p>Plano Gratuito:</p>
+                            <ul>
+                                <li>1 mês de acesso ao aplicativo</li>
+                                <li>Anúncios</li>
+                                <li>Coleira astreador</li>
+                                <li>Dicas de veterinários</li>
+                            </ul>
+                        </div>
+
+                        <div class="plan-details">
+                            <p>Plano Premium:</p>
+                            <ul>
+                                <li>Todos os benefícios do plano gratuito.</li>
+                                <li>Hospitais mais próximos.</li>
+                                <li>Coleira com rastreador.</li>
+                                <li>Saúde do Animal.</li>
+                                <li>Veterinários para prestar primeiros socorros.</li>
+                                <li>Chat com Veterinário.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <p>Com o plano premium, você tem acesso a todos os recursos do aplicativo e ainda pode contar com o
+                        suporte de uma equipe de veterinários 24 horas por dia, 7 dias por semana.</p>
+                </div>
+
+            </article>
+
+            <!-- Contact -->
+            <article id="contact" class="panel">
+                <header>
+                    <h2>Login / Cadastro</h2>
+                </header>
+                <form action="#" method="post">
+                    <div>
+                        <body>
+                            <div class="page">
+                                <form method="POST" class="formLogin">
+                                    <p>Digite os seus dados de acesso no campo abaixo.</p>
+                                    <label for="email">E-mail</label>
+                                    <input type="email" placeholder="Digite seu e-mail" autofocus="true" />
+                                    <label for="password">Senha</label>
+                                    <input type="password" placeholder="Digite sua senha" />
+                                    <a href="/">Esqueci minha senha</a>
+                                    <br><a href="C:\Users\578293\Downloads\html5up-astral\cadastro.html">Cadastre-se</a></br>
+                                    <br><input type="submit" value="Acessar" class="btn" /></br>
+                                </form>
+                            </div>
+                        </body>
+                    </div>
+                </form>
+            </article>
+
+            <!-- Footer -->
+            <div id="footer">
+                <ul class="copyright">
+                    <li>&copy; .</li>
+                    <li>Todos os Diretos Reservados. Gabriel Rodrigues Silva - Senac 2024</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+    </div>
+</body>
+
+</html>
